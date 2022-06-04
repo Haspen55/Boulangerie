@@ -118,10 +118,13 @@ body{
             width:7rem;
             padding:0;
         }
-        svg{
+       
+    }
+@media (max-width:1250px){ 
+    svg{
             display:none;
         }
-    }
+}
     .barre {
       background-color: white;
       width:3.5rem;
