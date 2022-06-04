@@ -1,0 +1,185 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    height:160vh;
+    
+  }
+    form {
+        width:30rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    a{
+      text-decoration: none;
+    }
+    h1{
+      text-align: center;
+      font-size: 1.4rem;
+      color: antiquewhite;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color:#000;
+      margin-top: 2rem;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      border:5px solid #000;
+      display:inline-block;
+      padding:15px;
+      background-color: aliceblue;
+    }
+    svg{
+        position: absolute;
+        right:0rem;
+        height:20rem;
+        clip-path: polygon(0 0, 71% 0, 71% 100%, 0% 100%);
+     
+    }
+    button {
+      margin-left: 50%;
+      transform: translateX(-50%);
+      margin-bottom:2rem;
+    }
+    
+    header{
+   
+      background-image:
+   url('./bakery_baking_bread_breakfast_dessert_food_homemade_601913.jpg');
+   width: 100vw;
+   height: 400px;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   padding: 20px;
+  
+  }
+    #texte{
+      padding:5rem 4rem;
+      font-size: 1.3rem;
+      font-weight: 600;
+      line-height: 3rem;
+    }
+    #subBtton {
+        margin-top: 2rem;
+    }
+    #Contact {
+      margin-bottom: 3rem;
+    }
+    .containerForm{
+       margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        margin-right: 5rem;
+        
+
+    }
+    .contactUs{
+      margin-top: 10rem;
+      color:#000;
+      text-align: center;
+      font-size: 1.8rem;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+ 
+    .animationSvg{
+     animation: appear 800ms ease-in-out forwards   ;
+    }
+    .mapouter{
+      margin-top: 7rem;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+   .containerBarre {
+     position:absolute;
+      right: 9rem;
+      top:2rem;
+      transition : all  2s ease-in forwards;
+   
+    }
+    @media  (max-width:675px){
+      body{
+      font-size: 1rem;
+      }
+        .containerBarre{
+            position:absolute;
+            right: 0rem;
+            top:2rem;
+            right:50px;
+        }
+        .containerBarre:hover{
+            position:absolute;
+            right: 0rem;
+            top:2rem;
+            
+        }
+        .containerMenu > a > h3{
+            font-size: 12px;
+        }
+         .containerMenu{
+             
+            width:7rem;
+            padding:0;
+        }
+        svg{
+            display:none;
+        }
+    }
+    .barre {
+      background-color: white;
+      width:3.5rem;
+      margin-top: 1rem;
+      border-radius: 2px;
+      height: 0.2rem; 
+    }
+    .containerMenu{
+      position:relative;
+      right:4rem;
+      background-color: white;
+      padding:2rem;
+      display:none;
+     }
+     #Contact:hover{
+       color:#70e8e0;
+     }
+     #Adresse:hover{
+       color:#70e8e0;
+     }
+    
+    #barre1 , #barre2 {
+     transition-duration: 0.5s;
+    }
+    #barre3{
+     transition-duration: .006s;
+    }
+    .containerBarre:hover{
+     position:absolute;
+      right: 0rem;
+      top:2rem;
+    }
+    .containerBarre:hover > .containerMenu {
+      display: inline-block;
+
+    }
+    .containerBarre:hover > #barre1{
+      transform:rotate(45deg) translateY(0px) translateX(24px) ;
+      width: 3rem;
+    }
+    .containerBarre:hover > #barre2{
+      transform:rotate(-45deg) translateY(10px) translateX(13px) ;
+      width: 3rem;
+    }
+    .containerBarre:hover > #barre3{
+     visibility: hidden;
+    }
+    @keyframes appear{
+ 0%{
+     opacity: 0;
+   transform: translateY(-126px) /* rotate(0) */;
+ }
+ 50%{
+     opacity: 0.2;
+   
+ }
+ 100%{
+   opacity: 1;
+   transform: translateY(0px) /* rotate(720deg ) */;
+ }
+}
